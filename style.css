@@ -1,0 +1,197 @@
+ /*? Nav-bar  */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #010101;
+    font-family: sans-serif;
+    background-image: url("taylor-friehl-6fRkksOejGc-unsplash.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: 0;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.navbar{
+    height: 90px;
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-left: 1px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-left: 650px;
+}
+
+.menu-links{
+    display: flex;
+    gap: 24px;
+    border-right: 1px solid #999999;
+    padding-inline:24px;
+}
+
+.menu-links a{
+    font-weight: 500;
+    color: #999999;
+    padding: 8px 16px;
+}
+
+.menu-links a:hover{
+    color: white;
+    /* background-color: #0aa5ff; */
+}
+
+.log-in{
+    font-weight: 500;
+    padding: 12px 22px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition:700 0.9s ease-in-out 0.2s;
+}
+
+.log-in:hover{
+    background-color: #0aa5ff;
+    color: white;
+}
+
+.menu-btn{
+    font-size: 32px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 53rem){
+    .menu{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+
+/*? main-section */
+.main-section{
+    background-color: white;
+    padding: 50px 40px;
+    color: #010101;
+    height: 720px;
+    width: 450px;
+    margin: auto;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+#un, #ps{
+    font-size: large;
+
+}
+p{
+    text-align: center;
+}
+
+.username, .password{
+    font-size: medium;
+    border: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #999999;
+    width: 269px;
+    background-color: transparent;
+    height: 30px;
+}
+
+.fp{
+    margin-left: 100px;
+    font-size: x-small;
+    font-weight: bold;
+}
+
+
+
+.log{
+    background-color: #0aa5ff;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 355px;
+    border-radius: 50px;
+}
+.log:hover{
+    background-color: #333333;
+    color: white;
+}
+
+.icon{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: larger;
+    color: #0aa5ff;
+}
+
+/*? footer */
+.foot{
+    background-color: #010101;
+    height: 250px;
+}
+
+.foot-1{
+    font-size: larger;
+    color: white;
+    text-decoration:underline;
+    font-weight: bold;
+}
+.foot-2{
+    font-size: large;
+    font-weight: bold;
+    text-decoration:underline;
+    color: white;
+}
+.foot-3{
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
